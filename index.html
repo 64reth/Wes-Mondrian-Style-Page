@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      /*
+        Write your CSS here
+        Gap Colour: #000
+        White: #F0F1EC
+        Red: #E72F24
+        Black: #232629
+        Blue: #004592
+        Yellow: #F9D01E
+
+        For dimensions, see dimensions.png image.
+        HINT: Remember you can't change the properties of grid lines.
+        But grid lines are transparent!
+        */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        font-family: "Tiny5", serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+      }
+      .container {
+        width: 748px;
+        height: 748px;
+        display: grid;
+        background-color: #000;
+        grid-template-columns: 320px 198px 153px 50px;
+        grid-template-rows: 414px 130px 155px 22px;
+        gap: 9px;
+      }
+      .mond1 {
+        background-color: #f0f1ec;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+      }
+      .mond1:hover {
+        transform: scale(1.05);
+        border-radius: 5px;
+      }
+
+      .red {
+        background-color: #e72f24;
+        grid-area: 1;
+        text-align: center;
+        font-size: 3rem;
+      }
+      .white1 {
+        grid-column: span 3;
+        font-size: 3rem;
+      }
+      .white2 {
+        grid-row: span 2;
+        font-size: 3rem;
+      }
+      .yellow {
+        grid-area: 2 / 2 / 4 / 4;
+        font-size: 3rem;
+        background-color: #f9d01e;
+      }
+      .white4 {
+        grid-area: 3 / 3 / 4 / 0;
+      }
+
+      .blue {
+        background-color: #004592;
+        grid-area: 2 / 4;
+        grid-area: 1 / 0;
+      }
+
+      .white5 {
+        font-size: 0.5rem;
+        margin: 0;
+        padding: 0;
+      }
+
+      .blue2 {
+        background-color: #004592;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tillana:wght@400;500;600;700;800&family=Tiny5&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Write your HTML here -->
+    <div class="container">
+      <div class="mond1 white1">Projects</div>
+      <div class="mond1 white2">Music</div>
+      <div class="mond1 yellow">About</div>
+      <div class="mond1 white4"></div>
+      <div class="mond1 white5"><p>2024 Gareth Allen</p></div>
+      <div class="mond1 blue2"></div>
+      <div class="mond1 red">Home</div>
+      <div class="mond1 black"></div>
+      <div class="mond1 blue"></div>
+    </div>
+  </body>
+</html>
